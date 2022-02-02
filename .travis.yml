@@ -1,0 +1,13 @@
+---
+if: branch = master
+
+language: minimal
+
+services:
+  - docker
+
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
